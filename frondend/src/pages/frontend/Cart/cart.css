@@ -1,0 +1,66 @@
+/* Giảm kích thước hình ảnh và giữ chi tiết */
+.cart_product img {
+    width: 200px; /* Đặt chiều rộng tối đa */
+    height: 150px; /* Đặt chiều cao tối đa */
+    object-fit: contain; /* Thu nhỏ hình ảnh để vừa với khoảng kích thước mà không bị cắt */
+  }
+  
+  /* Điều chỉnh khoảng cách lề trái cho tên sản phẩm */
+  .cart_description h4 {
+    font-size: 0.8em; /* Giảm 20% kích thước chữ */
+    padding-left: 50px; /* Thêm khoảng cách cách lề trái */
+  }
+  
+  .cart_description p {
+    font-size: 0.8em; /* Giảm 20% kích thước chữ */
+    padding-left: 50px; /* Thêm khoảng cách cách lề trái */
+  }
+  
+  .cart_total_price {
+    font-size: 0.8em; /* Giảm 20% kích thước chữ */
+  }
+  
+  .cart_price p {
+    font-size: 0.8em; /* Giảm 20% kích thước chữ */
+  }
+  
+  /* Căn giữa nội dung các cột */
+  .table-responsive table,
+  .table-responsive th,
+  .table-responsive td {
+    text-align: center; /* Căn giữa nội dung theo chiều ngang */
+    vertical-align: middle; /* Căn giữa nội dung theo chiều dọc */
+  }
+  
+  .cart_product,
+  .cart_description,
+  .cart_price,
+  .cart_quantity,
+  .cart_total,
+  .cart_delete {
+    text-align: center; /* Căn giữa nội dung theo chiều ngang */
+    vertical-align: middle; /* Căn giữa nội dung theo chiều dọc */
+  }
+  
+  /* CSS cho nút tăng giảm số lượng */
+  .cart_quantity_button {
+    display: flex; /* Hiển thị theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+  }
+  
+  .cart_quantity_button a {
+    display: inline-block;
+    padding: 5px 10px; /* Giảm kích thước nút */
+    font-size: 0.8em; /* Giảm kích thước chữ */
+    margin: 0 5px; /* Khoảng cách giữa các nút */
+    cursor: pointer; /* Con trỏ hiển thị khi hover */
+  }
+  
+  .cart_quantity_input {
+    width: 50px; /* Đặt chiều rộng cho input */
+    text-align: center; /* Căn giữa chữ */
+    margin: 0 5px; /* Khoảng cách giữa input và các nút */
+    font-size: 0.8em; /* Giảm kích thước chữ */
+  }
+  

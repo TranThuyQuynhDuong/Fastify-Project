@@ -1,0 +1,64 @@
+.list-new-container {
+    padding-bottom: 20px;
+}
+
+.list-new-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.list-new-title {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.list-new-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: green;
+}
+
+.list-new-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Tạo grid 4 cột có kích thước bằng nhau */
+    gap: 15px; /* Khoảng cách giữa các ô */
+}
+
+.list-new-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none; /* Loại bỏ đường gạch chân khi là link */
+    color: #333; /* Màu chữ */
+}
+
+.list-new-item:hover {
+    transform: translateY(-5px);
+}
+
+.list-new-image {
+    width: 100%; /* Đảm bảo hình ảnh lấp đầy ô */
+    height: auto; /* Chiều cao tự động tính theo tỉ lệ */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị vặn hoặc bị cắt */
+}
+
+.list-new-body {
+    padding: 10px;
+}
+
+.list-new-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Số dòng hiển thị tối đa */
+    -webkit-box-orient: vertical;
+    white-space: normal; /* Đảm bảo text wrap đúng cách */
+    font-size: 80%;
+}
